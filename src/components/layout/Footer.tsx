@@ -332,7 +332,7 @@ const Footer = () => {
                     href="tel:+919395236443"
                     className="mt-1 block text-sm text-slate-400 transition-colors duration-300 hover:text-blue-400"
                   >
-                    +91 93952 36443
+                    +91 93952 36443 <br /> +91 6900 757449
                   </a>
 
                 </div>
@@ -347,17 +347,7 @@ const Footer = () => {
                   <Clock className="h-5 w-5 text-blue-400" />
                 </div>
 
-                <div>
-
-                  <p className="text-xs font-medium uppercase tracking-wider text-slate-500">
-                    Working Hours
-                  </p>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-400">
-                    Mon - Sat, 9:00 AM - 6:00 PM
-                  </p>
-
-                </div>
+            
 
               </li>
 
