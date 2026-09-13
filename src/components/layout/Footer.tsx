@@ -341,15 +341,7 @@ const Footer = () => {
 
               {/* Working Hours */}
 
-              <li className="flex items-start gap-4">
-
-                <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-blue-500/10">
-                  <Clock className="h-5 w-5 text-blue-400" />
-                </div>
-
-            
-
-              </li>
+              
 
             </ul>
 
