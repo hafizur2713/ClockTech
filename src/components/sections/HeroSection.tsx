@@ -77,11 +77,15 @@ const HeroSection = () => (
         transition={{ duration: 0.5, delay: 0.3 }}
         className="mt-8 flex flex-wrap items-center justify-center gap-4"
       >
-        <Button size="lg" className="rounded-full px-8 gap-2">
-          View Pricing <ArrowRight className="h-4 w-4" />
+        <Button size="lg" className="rounded-full px-8 gap-2" asChild>
+          <a href="#pricing">
+            View Pricing <ArrowRight className="h-4 w-4" />
+          </a>
         </Button>
-        <Button size="lg" variant="outline" className="rounded-full px-8">
-          Our Services
+        <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
+          <a href="#services">
+            Our Services
+          </a>
         </Button>
       </motion.div>
 

@@ -16,20 +16,25 @@ const Footer = () => {
 
   return (
     <footer className="border-t border-border bg-background py-6">
-      <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
-        <a href="#" className="flex items-center gap-2">
-          <img src={logoImage} alt="clockTEch" className="h-8 w-auto object-contain" />
-        </a>
-        <div className="flex gap-6">
+      <div className="container grid gap-6 md:grid-cols-4 md:items-center">
+        {/* Logo */}
+        <div className="flex justify-center md:justify-start">
+          <a href="#" className="flex items-center gap-2">
+            <img src={logoImage} alt="clockTEch" className="h-8 w-auto object-contain" />
+          </a>
+        </div>
+        
+        {/* Nav Links */}
+        <div className="flex justify-center gap-6">
           {["Services", "Pricing", "Projects", "Contact"].map((l) => (
-            <a key={l} href={`#${l.toLowerCase()}`} className="text-xs text-muted-foreground hover:text-primary">
+            <a key={l} href={`#${l.toLowerCase()}`} className="text-sm text-muted-foreground hover:text-primary">
               {l}
             </a>
           ))}
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-center gap-4">
           <a href="mailto:rahmanhafizur31928@gmail.com" className="h-6 w-6 transition hover:scale-110">
             <img src={emailIcon} alt="Email" className="h-full w-full object-contain" />
           </a>
@@ -44,7 +49,10 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="text-xs text-muted-foreground">© 2026 clockTEch. All rights reserved.</p>
+        {/* Copyright */}
+        <div className="flex justify-center md:justify-end">
+          <p className="text-sm text-muted-foreground">© 2026 clockTEch. All rights reserved.</p>
+        </div>
       </div>
 
       {/* WhatsApp Chat Popup */}

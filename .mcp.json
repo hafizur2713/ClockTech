@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "jetro": {
+      "type": "stdio",
+      "command": "C:\\Users\\HAFIZUR\\.jetro\\runtime\\node-win32-x64.exe",
+      "args": [
+        "C:\\Users\\HAFIZUR\\.jetro\\mcp-server\\index.js"
+      ],
+      "env": {
+        "JET_WORKSPACE": "d:\\ClockTEch",
+        "JET_API_URL": "https://api.jetro.ai",
+        "PATH": "C:\\Users\\HAFIZUR\\.jetro\\runtime;C:\\Python314\\Scripts\\;C:\\Python314\\;C:\\Program Files\\Microsoft\\jdk-17.0.18.8-hotspot\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\composer;C:\\Program Files\\MongoDB\\Server\\8.2\\bin;C:\\Users\\HAFIZUR\\.config\\herd\\bin\\nvm;C:\\Program Files (x86)\\GnuWin32;C:\\Program Files\\MongoDB\\mongosh-2.8.3-win32-x64\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\180\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\170\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Gradle\\gradle-9.7.1\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\agy\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\HAFIZUR\\.config\\herd\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\HAFIZUR\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\HAFIZUR\\AppData\\Local\\JetBrains\\Toolbox\\scripts;C:\\php-8.4.13;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Kiro\\bin;D:\\Windsurf\\bin;C:\\Users\\HAFIZUR\\flutter\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Qoder\\bin;C:\\Users\\HAFIZUR\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\mongosh\\;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Antigravity\\bin;C:\\Program Files\\Git\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;C:\\Users\\HAFIZUR\\.local\\bin;C:\\Program Files (x86)\\GnuWin32\\bin;C:\\MinGW\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Ollama;C:\\Users\\HAFIZUR\\AppData\\Local\\Python\\bin;C:\\Users\\HAFIZUR\\AppData\\Local\\Microsoft\\WinGet\\Packages\\GitHub.Copilot_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\\Users\\HAFIZUR\\AppData\\Local\\Programs\\Antigravity IDE\\bin;C:\\Dev;C:\\Users\\HAFIZUR\\AppData\\Roaming\\npm;C:\\Users\\HAFIZUR\\.dotnet\\tools;C:\\Users\\HAFIZUR\\AppData\\Local\\Kingsoft\\WPS Office\\12.1.0.27458\\clitool"
+      }
+    }
+  }
+}
