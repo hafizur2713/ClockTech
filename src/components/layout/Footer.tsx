@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 
+import logoImage from "../../assets/images/ChatGPT Image Apr 18, 2026, 07_20_16 AM.png";
+import emailIcon from "../../assets/images/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png";
+import linkedinIcon from "../../assets/images/social_media_logo_linkedin_icon-icons.com_69094.png";
+import githubIcon from "../../assets/images/github-logo_icon-icons.com_73546.png";
+import instagramIcon from "../../assets/images/4202090instagramlogosocialsocialmedia-115598_115703.png";
+import whatsappIcon from "../../assets/images/Whatsapp_37229.png";
+
 const Footer = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
@@ -11,7 +18,7 @@ const Footer = () => {
     <footer className="border-t border-border bg-background py-6">
       <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
         <a href="#" className="flex items-center gap-2">
-          <img src="/src/assets/images/ChatGPT Image Apr 18, 2026, 07_20_16 AM.png" alt="clockTEch" className="h-8 w-auto object-contain" />
+          <img src={logoImage} alt="clockTEch" className="h-8 w-auto object-contain" />
         </a>
         <div className="flex gap-6">
           {["Services", "Pricing", "Projects", "Contact"].map((l) => (
@@ -24,16 +31,16 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex items-center gap-4">
           <a href="mailto:rahmanhafizur31928@gmail.com" className="h-6 w-6 transition hover:scale-110">
-            <img src="/src/assets/images/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png" alt="Email" className="h-full w-full object-contain" />
+            <img src={emailIcon} alt="Email" className="h-full w-full object-contain" />
           </a>
           <a href="https://www.linkedin.com/in/hafizur-rahman-767655292" target="_blank" rel="noopener noreferrer" className="h-6 w-6 transition hover:scale-110">
-            <img src="/src/assets/images/social_media_logo_linkedin_icon-icons.com_69094.png" alt="LinkedIn" className="h-full w-full object-contain" />
+            <img src={linkedinIcon} alt="LinkedIn" className="h-full w-full object-contain" />
           </a>
           <a href="https://github.com/hafizurrahman3096-design" target="_blank" rel="noopener noreferrer" className="h-6 w-6 transition hover:scale-110">
-            <img src="/src/assets/images/github-logo_icon-icons.com_73546.png" alt="GitHub" className="h-full w-full object-contain" />
+            <img src={githubIcon} alt="GitHub" className="h-full w-full object-contain" />
           </a>
           <a href="https://www.instagram.com/hafizur805" target="_blank" rel="noopener noreferrer" className="h-6 w-6 transition hover:scale-110">
-            <img src="/src/assets/images/4202090instagramlogosocialsocialmedia-115598_115703.png" alt="Instagram" className="h-full w-full object-contain" />
+            <img src={instagramIcon} alt="Instagram" className="h-full w-full object-contain" />
           </a>
         </div>
 
@@ -93,7 +100,7 @@ const Footer = () => {
         {isChatOpen ? (
           <X className="h-6 w-6 text-white" />
         ) : (
-          <img src="/src/assets/images/Whatsapp_37229.png" alt="WhatsApp" className="h-10 w-10 object-contain" />
+          <img src={whatsappIcon} alt="WhatsApp" className="h-10 w-10 object-contain" />
         )}
       </button>
     </footer>

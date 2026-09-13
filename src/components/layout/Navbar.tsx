@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import logoImage from "../../assets/images/ChatGPT Image Apr 18, 2026, 07_20_16 AM.png";
+
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Pricing", href: "#pricing" },
@@ -16,7 +18,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <img src="/src/assets/images/ChatGPT Image Apr 18, 2026, 07_20_16 AM.png" alt="clockTEch" className="h-10 w-auto object-contain" />
+          <img src={logoImage} alt="clockTEch" className="h-10 w-auto object-contain" />
         </a>
 
         {/* Desktop */}
