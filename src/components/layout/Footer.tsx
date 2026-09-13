@@ -5,15 +5,11 @@ import {
   MapPin,
   Mail,
   Phone,
-  Clock,
   ChevronUp,
   ArrowUpRight,
 } from "lucide-react";
 
-// Logo
 import logoImage from "../../assets/images/ChatGPT Image Apr 18, 2026, 07_20_16 AM.png";
-
-// Social Icons
 import emailIcon from "../../assets/images/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png";
 import linkedinIcon from "../../assets/images/social_media_logo_linkedin_icon-icons.com_69094.png";
 import githubIcon from "../../assets/images/github-logo_icon-icons.com_73546.png";
@@ -23,15 +19,13 @@ import whatsappIcon from "../../assets/images/Whatsapp_37229.png";
 const Footer = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
-  // WhatsApp
   const whatsappNumber = "919395236443";
   const whatsappMessage =
     "Hi! I'm interested in your web development services.";
 
-  // Current year
   const currentYear = new Date().getFullYear();
 
-  // Footer links
+  // Quick Links
   const quickLinks = [
     { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
@@ -40,6 +34,7 @@ const Footer = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  // Services
   const services = [
     { name: "Web Development", href: "#services" },
     { name: "Mobile App Development", href: "#services" },
@@ -48,6 +43,7 @@ const Footer = () => {
     { name: "Maintenance & Support", href: "#services" },
   ];
 
+  // Social Links
   const socialLinks = [
     {
       name: "Email",
@@ -71,6 +67,7 @@ const Footer = () => {
     },
   ];
 
+  // Scroll to top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -81,9 +78,9 @@ const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[#0b1220] font-sans text-slate-300">
 
-      {/* =========================================================
+      {/* =====================================================
           BACKGROUND DECORATION
-      ========================================================= */}
+      ===================================================== */}
 
       <div className="pointer-events-none absolute -left-32 bottom-0 h-80 w-80 rounded-full bg-blue-500/5 blur-3xl" />
 
@@ -91,17 +88,17 @@ const Footer = () => {
 
       <div className="pointer-events-none absolute left-1/2 top-20 h-64 w-64 -translate-x-1/2 rounded-full bg-blue-500/[0.02] blur-3xl" />
 
-      {/* =========================================================
+      {/* =====================================================
           MAIN FOOTER
-      ========================================================= */}
+      ===================================================== */}
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 pb-12 pt-16 sm:px-8 lg:px-10">
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
 
-          {/* =====================================================
+          {/* =================================================
               COLUMN 1 - BRAND
-          ===================================================== */}
+          ================================================= */}
 
           <div className="lg:pr-6">
 
@@ -161,7 +158,7 @@ const Footer = () => {
               Let's build something great together!
             </p>
 
-            {/* Small Decorative Line */}
+            {/* Decorative Line */}
 
             <div className="mt-4 flex items-center gap-1">
               <span className="h-[2px] w-12 bg-blue-500" />
@@ -171,9 +168,9 @@ const Footer = () => {
 
           </div>
 
-          {/* =====================================================
+          {/* =================================================
               COLUMN 2 - QUICK LINKS
-          ===================================================== */}
+          ================================================= */}
 
           <div>
 
@@ -199,9 +196,8 @@ const Footer = () => {
                     <span>{link.name}</span>
 
                     <ArrowUpRight
-                      className="h-3.5 w-3.5 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100"
+                      className="h-3.5 w-3.5 opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
                     />
-
                   </a>
 
                 </li>
@@ -211,9 +207,9 @@ const Footer = () => {
 
           </div>
 
-          {/* =====================================================
-              COLUMN 3 - SERVICES
-          ===================================================== */}
+          {/* =================================================
+              COLUMN 3 - OUR SERVICES
+          ================================================= */}
 
           <div>
 
@@ -239,7 +235,7 @@ const Footer = () => {
                     <span>{service.name}</span>
 
                     <ArrowUpRight
-                      className="h-3.5 w-3.5 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100"
+                      className="h-3.5 w-3.5 opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
                     />
 
                   </a>
@@ -251,9 +247,9 @@ const Footer = () => {
 
           </div>
 
-          {/* =====================================================
-              COLUMN 4 - CONTACT
-          ===================================================== */}
+          {/* =================================================
+              COLUMN 4 - CONTACT US
+          ================================================= */}
 
           <div>
 
@@ -305,7 +301,7 @@ const Footer = () => {
 
                   <a
                     href="mailto:rahmanhafizur31928@gmail.com"
-                    className="mt-1 block text-sm text-slate-400 transition-colors duration-300 hover:text-blue-400"
+                    className="mt-1 block break-all text-sm text-slate-400 transition-colors duration-300 hover:text-blue-400"
                   >
                     rahmanhafizur31928@gmail.com
                   </a>
@@ -332,16 +328,12 @@ const Footer = () => {
                     href="tel:+919395236443"
                     className="mt-1 block text-sm text-slate-400 transition-colors duration-300 hover:text-blue-400"
                   >
-                    +91 93952 36443 <br /> +91 6900 757449
+                    +91 93952 36443
                   </a>
 
                 </div>
 
               </li>
-
-              {/* Working Hours */}
-
-              
 
             </ul>
 
@@ -351,15 +343,15 @@ const Footer = () => {
 
       </div>
 
-      {/* =========================================================
+      {/* =====================================================
           DIVIDER
-      ========================================================= */}
+      ===================================================== */}
 
       <div className="relative z-10 border-t border-slate-800/80" />
 
-      {/* =========================================================
+      {/* =====================================================
           BOTTOM BAR
-      ========================================================= */}
+      ===================================================== */}
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-6 sm:px-8 lg:px-10">
 
@@ -371,7 +363,7 @@ const Footer = () => {
             © {currentYear} clockTEch. All rights reserved.
           </p>
 
-          {/* Bottom Links */}
+          {/* Legal Links */}
 
           <div className="flex flex-wrap items-center justify-center gap-3 text-slate-500">
 
@@ -406,9 +398,9 @@ const Footer = () => {
 
       </div>
 
-      {/* =========================================================
-          SCROLL TO TOP
-      ========================================================= */}
+      {/* =====================================================
+          SCROLL TO TOP BUTTON
+      ===================================================== */}
 
       <button
         onClick={scrollToTop}
@@ -418,9 +410,9 @@ const Footer = () => {
         <ChevronUp className="h-5 w-5" />
       </button>
 
-      {/* =========================================================
+      {/* =====================================================
           WHATSAPP CHAT POPUP
-      ========================================================= */}
+      ===================================================== */}
 
       {isChatOpen && (
         <div className="fixed bottom-24 right-5 z-[100] w-[calc(100%-2.5rem)] max-w-[360px] overflow-hidden rounded-2xl bg-white shadow-2xl ring-1 ring-black/5 sm:right-6">
@@ -432,9 +424,7 @@ const Footer = () => {
             <div className="flex items-center gap-3">
 
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
-
                 <MessageCircle className="h-5 w-5 text-white" />
-
               </div>
 
               <div>
@@ -465,7 +455,7 @@ const Footer = () => {
 
           <div className="bg-[#f0f2f5] p-4">
 
-            <div className="relative mb-1 rounded-xl rounded-tl-none bg-white p-4 shadow-sm">
+            <div className="rounded-xl rounded-tl-none bg-white p-4 shadow-sm">
 
               <p className="text-sm leading-6 text-gray-700">
                 Hello! 👋
@@ -493,11 +483,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-[#1ebe5d] hover:shadow-md"
             >
-
               <MessageCircle className="h-5 w-5" />
-
               Start Chat
-
             </a>
 
           </div>
@@ -505,9 +492,9 @@ const Footer = () => {
         </div>
       )}
 
-      {/* =========================================================
+      {/* =====================================================
           WHATSAPP FLOATING BUTTON
-      ========================================================= */}
+      ===================================================== */}
 
       <button
         onClick={() => setIsChatOpen(!isChatOpen)}
